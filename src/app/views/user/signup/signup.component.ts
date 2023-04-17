@@ -34,7 +34,7 @@ export class SignupComponent implements OnInit {
         .subscribe({
           next: (data: DefaultResponseType | LoginResponseType) => {
             let error = null;
-            if ((data as DefaultResponseType).error !== undefined) {
+              if ((data as DefaultResponseType).error !== undefined) {
               error = (data as DefaultResponseType).message;
             }
             const loginResponse = data as LoginResponseType;

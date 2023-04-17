@@ -30,7 +30,7 @@ header.header {
             list-style: none;
             border-bottom: 1px solid transparent;
 
-            &:active {
+            &.active {
               border-bottom-color: $green-text-color;
             }
 

@@ -77,6 +77,7 @@ export class HeaderComponent implements OnInit {
   doLogout(): void {
     this.authService.removeTokens();
     this.authService.userId = null;
+    this.cartService.count$.next(0);
     this._snackBar.open('Вы вышли из системы');
     this.router.navigate(['/']);
   }
